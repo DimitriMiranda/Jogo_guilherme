@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+#game{
+    width: 700px;
+    height: 403px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    background-image: url('media/main_background.gif');
+    
+}
+
+#personagem{
+    width: 60px;
+    height: 200px;
+    margin-left: 60px;
+    background-image: url('media/personagem.jpeg');
+    position: relative;
+    top: 150px;
+    
+}
+
+.animar{
+    animation: personagem 500ms infinite;
+}
+
+@keyframes personagem{
+    0%{top: 70px;}
+    30%{top: 0px;}
+    70%{top: 35px;}
+    100%{top: 70px;}
+}
+
+#quadrado{
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    position: relative;   
+    background-image: url('media/obstaculo1.gif');
+   
+    left: 579px;
+    animation: quadrado 2s infinite linear;
+    background-repeat: repeat-y;
+    
+}
+
+@keyframes quadrado{
+    0%{left: 579px;}
+    100%{left: -60px;}
+}
