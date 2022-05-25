@@ -12,16 +12,24 @@
     margin: 0 auto;
     background-image: url('media/main_background.gif');
     
+    
 }
 
 #personagem{
-    width: 60px;
+    width: 160px;
     height: 200px;
     margin-left: 60px;
-    background-image: url('media/personagem.jpeg');
     position: relative;
     top: 150px;
-    
+   
+}
+
+
+#personagem img{
+    height: 100px;
+    width: 190px;
+    margin: 100px 0px 0px  0px;
+   
 }
 
 .animar{
@@ -43,7 +51,7 @@
     background-image: url('media/obstaculo1.gif');
    
     left: 579px;
-    animation: quadrado 2s infinite linear;
+    animation: quadrado 1s infinite linear;
     background-repeat: repeat-y;
     
 }

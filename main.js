@@ -3,6 +3,8 @@ let personagem = document.querySelector('#personagem')
 let quadrado = document.querySelector('#quadrado')
 const box = document.body.querySelector("#quadrado")
 
+
+
 function pular(){
 
     clicks++;
@@ -23,7 +25,7 @@ function pular(){
     
        if(clicks > 3  &&  clicks < 6 ) {
     
-        let velocidade_rapida  = getRandomInt(2,3)
+        let velocidade_rapida  = getRandomInt(1,2)
         box.style.animation = "quadrado "+velocidade_rapida+"s infinite linear"
     
        }
@@ -50,7 +52,7 @@ var testarColisao = setInterval( function(){
         window.getComputedStyle(quadrado).getPropertyValue('left')
        )
 
-       if(EsquerdaQuadrado < 80 && EsquerdaQuadrado > 0 && topoPersonagem >= 70){
+       if(EsquerdaQuadrado < 150 && EsquerdaQuadrado > 0 && topoPersonagem >= 110){
         quadrado.style.animation = 'none'
         quadrado.style.display = 'none'
         alert('Você perdeu!')
