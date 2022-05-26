@@ -15,6 +15,21 @@
     
 }
 
+#btn{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* margin: 20px 0px  0px 0px; */
+    background-image: url('media/btn_UP.png');
+    background-origin: padding-box;
+    display: block;
+   
+
+
+}
+
 #personagem{
     width: 160px;
     height: 200px;
