@@ -29,6 +29,8 @@
     height: 100px;
     width: 190px;
     margin: 100px 0px 0px  0px;
+    pointer-events: none;
+    cursor: default;
    
 }
 
