@@ -53,8 +53,8 @@ var testarColisao = setInterval( function(){
        )
 
        if(EsquerdaQuadrado < 150 && EsquerdaQuadrado > 0 && topoPersonagem >= 110){
-        quadrado.style.animation = 'none'
-        quadrado.style.display = 'none'
+        // quadrado.style.animation = 'none'
+        // quadrado.style.display = 'none'
         alert('Você perdeu!')
         document.location.reload(true)
     }
