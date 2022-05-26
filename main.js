@@ -43,21 +43,27 @@ function pular(){
     
 }
 
+
+
 var testarColisao = setInterval( function(){
 
-    var topoPersonagem = parseInt(
-     window.getComputedStyle(personagem).getPropertyValue('top')
-    )
-    var EsquerdaQuadrado = parseInt(
-        window.getComputedStyle(quadrado).getPropertyValue('left')
-       )
-
-       if(EsquerdaQuadrado < 150 && EsquerdaQuadrado > 0 && topoPersonagem >= 110){
-        // quadrado.style.animation = 'none'
-        // quadrado.style.display = 'none'
-        alert('Você perdeu!')
-        document.location.reload(true)
+    if (document.readyState == "complete") {
+       
+        var topoPersonagem = parseInt(
+            window.getComputedStyle(personagem).getPropertyValue('top')
+           )
+           var EsquerdaQuadrado = parseInt(
+               window.getComputedStyle(quadrado).getPropertyValue('left')
+              )
+       
+              if(EsquerdaQuadrado < 150 && EsquerdaQuadrado > 0 && topoPersonagem >= 110){
+               // quadrado.style.animation = 'none'
+               // quadrado.style.display = 'none'
+               alert('Você perdeu!')
+               document.location.reload(true)
+           }
     }
+   
     
 
 }, 10)
